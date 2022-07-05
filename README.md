@@ -1,19 +1,21 @@
 # User Management Demo
-A simple "User Management" API demo using Node.js, Express, MongoDB, and TypeScript.
+A simple REST API demo for managing users and roles.
+
 The services can be accessed from the following endpoints:
-* http://localhost:1337/api/users
-* http://localhost:1337/api/roles
+- http://localhost:1337/api/users
+- http://localhost:1337/api/roles
 
 ## Features
-* Login functionality
-* CRUD operations for "User" and "Role"
-* MongoDB database integration
-* Input validation
-* Basic password hashing
+- Login functionality
+- CRUD operations for "User" and "Role"
+- MongoDB database integration
+- Input validation
+- Basic password hashing
 
 ## Software Requirements
 - Node.Js
 - MongoDB (local installation)
+- Postman (testing)
 
 ### Dependencies
 - express
