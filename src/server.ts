@@ -2,6 +2,7 @@ import http from 'http';
 import express from 'express';
 import mongoose from 'mongoose';
 import { config } from './config/config';
+import userRoutes from './routes/User';
 
 const router = express();
 
@@ -45,6 +46,7 @@ const StartServer = () => {
   });
 
   /** Routes */
+  router.use('/api/users', userRoutes);
 
   /** Healthcheck */
   router.get('/health', (req, res, next) => res.status(200).json({ message: 'OK' }));
