@@ -1,14 +1,14 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
 export interface IRole {
-  role: string,
+  type: string,
 }
 
 export interface IRoleModel extends IRole, Document {}
 
 const RoleSchema: Schema = new Schema(
   {
-    role: { type: String, required: true },
+    type: { type: String, required: true },
   },
   {
     timestamps: true,

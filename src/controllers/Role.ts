@@ -26,6 +26,7 @@ const readRole = (req: Request, res: Response, next: NextFunction) => {
 
 const readAllRole = (req: Request, res: Response, next: NextFunction) => {
   return Role.find()
+    .select({ "_id": 0, "type": 1 })
     .then((role) => res.status(200).json({ role }))
     .catch((error) => res.status(500).json({ error }));
 };

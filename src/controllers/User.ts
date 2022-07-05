@@ -24,12 +24,14 @@ const readUser = (req: Request, res: Response, next: NextFunction) => {
   const id = req.params.id;
 
   return User.findById(id)
+    .populate('role', { "_id": 0, "type": 1 })
     .then((user) => (user ? res.status(200).json({ user }) : res.status(404).json({ message: 'Not Found'})))
     .catch((error) => res.status(500).json({ error }));
 };
 
 const readAllUser = (req: Request, res: Response, next: NextFunction) => {
   return User.find()
+    .select({ "_id": 0, "firstname": 1, "lastname": 1, "email": 1 })
     .then((users) => res.status(200).json({ users }))
     .catch((error) => res.status(500).json({ error }));
 };
