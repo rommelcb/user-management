@@ -1,5 +1,8 @@
 # User Management Demo
 A simple "User Management" API demo using Node.js, Express, MongoDB, and TypeScript.
+The servides can be accessed from the following endpoints:
+* http://localhost:1337/api/users
+* http://localhost:1337/api/roles
 
 ## Features
 * Login functionality
