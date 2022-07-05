@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  api:
+    build: ./
+    ports:
+      - 1337:1337
+    environment:
+      MONGO_URL: mongodb://db/user-management
+  db:
+    image: mongo:4.4-focal
+    ports:
+      - 27017:2707
+    volumes:
+      - user-data:/data/db
+
+volumes:
+  user-data:

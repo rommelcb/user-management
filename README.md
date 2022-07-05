@@ -15,6 +15,7 @@ The services can be accessed from the following endpoints:
 ## Software Requirements
 - Node.Js
 - MongoDB (local installation)
+- Docker
 - Postman (testing)
 
 ### Dependencies
@@ -42,4 +43,6 @@ To build the source code.
 - To test your build. Run `npm start`.
 
 ## Deployment
-Deployment using docker will be available soon.
+To deploy the application locally, run `docker-compose up -d`.
+
+*** Still have some problems on the deployment thou. 
