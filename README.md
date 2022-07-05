@@ -21,11 +21,14 @@ The services can be accessed from the following endpoints:
 - express
 - mongoose
 - ts-node
+- bcrypt
 - dotenv
 - joi
 
 ### Dev Dependencies
 - nodemon
+- @types/bcrypt
+- @types/express
 - typescript
 
 ## Installation
